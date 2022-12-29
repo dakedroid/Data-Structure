@@ -1,12 +1,9 @@
 fun isAnagram(s: String, t: String): Boolean {
     if (s.length != t.length) return false;
-
     val sc = s.toCharArray()
     val tc = t.toCharArray()
-
     sc.sort()
     tc.sort()
-
     for (i in sc.indices) {
         if (sc[i] != tc[i]) {
             return false
@@ -36,19 +33,15 @@ fun isAnagram2(s: String, t: String): Boolean {
 }
 
 fun isAnagram3(s: String, t: String): Boolean {
-
     val abecedario = Array(26) { 0 }
     if (s.length != t.length) return false
-
     for (i in s.indices) {
         abecedario[s[i] - 'a']++
         abecedario[t[i] - 'a']--
     }
-
     for (letra in abecedario) {
         if (letra != 0) return false
     }
-
     return true
 }
 
