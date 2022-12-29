@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-public class ContainsDuplicate {
+public class E1ContainsDuplicate {
 
     public boolean containsDuplicate(int[] nums) {
         for (int i = 0; i < nums.length; i++) {
@@ -42,7 +42,7 @@ public class ContainsDuplicate {
 
     public static void main(String[] args) {
         int[] nums = new int[]{1, 2, 3, 1};
-        ContainsDuplicate cd = new ContainsDuplicate();
+        E1ContainsDuplicate cd = new E1ContainsDuplicate();
         System.out.println("RESULTADO: " + cd.containsDuplicate(nums));
     }
 }
