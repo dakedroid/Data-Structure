@@ -61,7 +61,6 @@ public class E2Anagram {
             if (letter != 0) return false;
         }
 
-
         return true;
     }
 
