@@ -45,12 +45,9 @@ public class E2Anagram {
     }
 
     public boolean isAnagram3(String s, String t) {
-
         if (s.length() != t.length()) return false;
 
         int[] alphabet = new int[26]; // a b c d f g h i j k ...
-
-        // anagram
 
         for (int i = 0; i < s.length(); i++) {
             alphabet[s.charAt(i) - 'a']++;
@@ -66,7 +63,6 @@ public class E2Anagram {
 
 
     public static void main(String[] args) {
-
         E2Anagram a = new E2Anagram();
         a.isAnagram3("anagram", "anagram");
     }
